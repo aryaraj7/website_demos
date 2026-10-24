@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Menu — Ember & Oak</title>
+  <meta name="description" content="The Ember & Oak menu — small plates, wood-fired mains, sides and desserts, all cooked over oak.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="wrap nav">
+      <a class="brand" href="../home/index.html"><span class="logo"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8"><path d="M12 2c1 3-1 4-2 6-1 1.8-.5 4 2 4 2 0 3-1.5 3-3 1.5 1 2 3 2 4a5 5 0 11-10 0c0-3 2-5 3-7 1-2 2-3 2-4z"/></svg></span><span class="t"><b>Ember &amp; Oak</b><span>Wood-Fired Kitchen</span></span></a>
+      <nav class="nav-links">
+        <a href="../home/index.html">Home</a>
+        <a href="../menu/index.html" class="active">Menu</a>
+        <a href="../order/index.html">Order</a>
+        <a href="../reservations/index.html">Reservations</a>
+      </nav>
+      <div class="nav-right">
+        <a class="cart-btn" href="#" data-open-cart aria-label="Open order"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 2l-2 5v13a1 1 0 001 1h14a1 1 0 001-1V7l-2-5H6zM4 7h16M16 11a4 4 0 01-8 0"/></svg><span class="cart-count">0</span></a>
+        <button class="nav-toggle" aria-label="Menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg></button>
+      </div>
+    </div>
+  </header>
+
+  <section class="page-head">
+    <div class="wrap">
+      <div class="breadcrumb">Home · Menu</div>
+      <h1>The Menu</h1>
+      <p>Changes with the season. Everything touches the fire. <span class="gold">●</span> marks vegetarian.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap" style="max-width:820px">
+
+      <div class="menu-cat">
+        <h3>Small Plates</h3>
+        <div class="menu-item"><div class="mi-main"><h4>Hearth Flatbread</h4><span class="veg"></span><p>Blistered in the fire, whipped ricotta, hot honey, thyme</p></div><div class="dots"></div><div class="mi-price">$14</div></div>
+        <div class="menu-item"><div class="mi-main"><h4>Charred Octopus</h4><p>Smoked paprika, confit potato, salsa verde</p></div><div class="dots"></div><div class="mi-price">$18</div></div>
+        <div class="menu-item"><div class="mi-main"><h4>Fire-Roasted Beets</h4><span class="veg"></span><p>Goat curd, candied walnut, aged balsamic</p></div><div class="dots"></div><div class="mi-price">$13</div></div>
+        <div class="menu-item"><div class="mi-main"><h4>Grilled Oysters</h4><p>Half dozen, burnt-butter, lemon, chilli</p></div><div class="dots"></div><div class="mi-price">$21</div></div>
+      </div>
+
+      <div class="menu-cat">
+        <h3>From the Fire</h3>
+        <div class="menu-item"><div class="mi-main"><h4>Oak-Grilled Ribeye</h4><p>45-day aged, rosemary butter, bone marrow (300g)</p></div><div class="dots"></div><div class="mi-price">$42</div></div>
+        <div class="menu-item"><div class="mi-main"><h4>Smoked Half Chicken</h4><p>Brick-pressed, lemon, charred spring onion</p></div><div class="dots"></div><div class="mi-price">$28</div></div>
+        <div class="menu-item"><div class="mi-main"><h4>Whole Branzino</h4><p>Fennel, herbs, fire-roasted over oak</p></div><div class="dots"></div><div class="mi-price">$34</div></div>
+        <div class="menu-item"><div class="mi-main"><h4>Ember Mushroom Tart</h4><span class="veg"></span><p>Wild mushrooms, taleggio, truffle, flaky pastry</p></div><div class="dots"></div><div class="mi-price">$24</div></div>
+      </div>
+
+      <div class="menu-cat">
+        <h3>Sides</h3>
+        <div class="menu-item"><div class="mi-main"><h4>Charred Market Veg</h4><span class="veg"></span><p>Whatever's best this week, salsa verde</p></div><div class="dots"></div><div class="mi-price">$9</div></div>
+        <div class="menu-item"><div class="mi-main"><h4>Duck-Fat Potatoes</h4><p>Triple-cooked, rosemary salt</p></div><div class="dots"></div><div class="mi-price">$10</div></div>
+        <div class="menu-item"><div class="mi-main"><h4>Smoked Mac &amp; Cheese</h4><span class="veg"></span><p>Three cheeses, oak-smoked breadcrumb</p></div><div class="dots"></div><div class="mi-price">$11</div></div>
+      </div>
+
+      <div class="menu-cat">
+        <h3>Sweet</h3>
+        <div class="menu-item"><div class="mi-main"><h4>Burnt Basque Cheesecake</h4><span class="veg"></span><p>Caramelised top, crème fraîche</p></div><div class="dots"></div><div class="mi-price">$12</div></div>
+        <div class="menu-item"><div class="mi-main"><h4>Grilled Peach</h4><span class="veg"></span><p>Vanilla ice cream, honeycomb, mint</p></div><div class="dots"></div><div class="mi-price">$11</div></div>
+      </div>
+
+      <div class="center" style="margin-top:20px">
+        <div class="sep"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2c1 3-1 4-2 6-1 1.8-.5 4 2 4 2 0 3-1.5 3-3 1.5 1 2 3 2 4a5 5 0 11-10 0c0-3 2-5 3-7 1-2 2-3 2-4z"/></svg></div>
+        <p class="lead center" style="margin:22px auto 24px">Want it at home? Our favourites are available to order online.</p>
+        <a class="btn btn--ember" href="../order/index.html">Order online</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="../home/index.html"><span class="logo"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8"><path d="M12 2c1 3-1 4-2 6-1 1.8-.5 4 2 4 2 0 3-1.5 3-3 1.5 1 2 3 2 4a5 5 0 11-10 0c0-3 2-5 3-7 1-2 2-3 2-4z"/></svg></span><span class="t"><b>Ember &amp; Oak</b><span>Wood-Fired Kitchen</span></span></a>
+          <p>Seasonal plates cooked over live oak fire. Downtown, since 2009.</p>
+        </div>
+        <div><h5>Visit</h5><a href="../menu/index.html">Menu</a><a href="../order/index.html">Order online</a><a href="../reservations/index.html">Reservations</a></div>
+        <div><h5>Hours</h5><a href="#">Tue–Thu 5–10</a><a href="#">Fri–Sat 5–11</a><a href="#">Sun 4–9</a></div>
+        <div><h5>Find us</h5><a href="#">42 Oak Lane</a><a href="#">(555) 014-3322</a><a href="#">hello@emberoak.demo</a></div>
+      </div>
+      <div class="foot-bottom"><span>© 2026 Ember &amp; Oak — Demo website.</span><span>Made with 🔥 &amp; oak</span></div>
+    </div>
+  </footer>
+
+  <div class="drawer-overlay" id="drawerOverlay" data-close-cart></div>
+  <aside class="drawer" id="cartDrawer" aria-label="Your order">
+    <div class="drawer-head"><h3>Your Order</h3><button class="drawer-close" data-close-cart aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg></button></div>
+    <div class="drawer-body" id="cartBody"></div>
+    <div class="drawer-foot">
+      <div class="sum-row"><span>Subtotal</span><span id="sumSub">$0.00</span></div>
+      <div class="sum-row"><span>Delivery <small>(free over $40)</small></span><span id="sumDel">$0.00</span></div>
+      <div class="sum-row total"><span>Total</span><span id="sumTotal">$0.00</span></div>
+      <button class="btn btn--ember btn--block" id="checkoutBtn">Place order</button>
+    </div>
+  </aside>
+
+  <div class="toast" id="toast"></div>
+  <script src="../js/main.js"></script>
+</body>
+</html>

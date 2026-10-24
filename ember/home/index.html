@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ember & Oak — Wood-Fired Kitchen</title>
+  <meta name="description" content="Ember & Oak is a wood-fired restaurant serving seasonal plates over open flame. Book a table or order online.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="wrap nav">
+      <a class="brand" href="../home/index.html">
+        <span class="logo"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8"><path d="M12 2c1 3-1 4-2 6-1 1.8-.5 4 2 4 2 0 3-1.5 3-3 1.5 1 2 3 2 4a5 5 0 11-10 0c0-3 2-5 3-7 1-2 2-3 2-4z"/></svg></span>
+        <span class="t"><b>Ember &amp; Oak</b><span>Wood-Fired Kitchen</span></span>
+      </a>
+      <nav class="nav-links">
+        <a href="../home/index.html" class="active">Home</a>
+        <a href="../menu/index.html">Menu</a>
+        <a href="../order/index.html">Order</a>
+        <a href="../reservations/index.html">Reservations</a>
+      </nav>
+      <div class="nav-right">
+        <a class="cart-btn" href="#" data-open-cart aria-label="Open order"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 2l-2 5v13a1 1 0 001 1h14a1 1 0 001-1V7l-2-5H6zM4 7h16M16 11a4 4 0 01-8 0"/></svg><span class="cart-count">0</span></a>
+        <button class="nav-toggle" aria-label="Menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg></button>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero" style="background:linear-gradient(180deg,rgba(26,21,18,.68),rgba(26,21,18,.92)),url('https://images.unsplash.com/photo-1558030089-02acba3c214e?auto=format&fit=crop&w=1600&q=70') center/cover">
+    <div class="wrap">
+      <span class="kicker">Since 2009 · Open Fire</span>
+      <h1>Cooked over<br><em>live flame</em></h1>
+      <p>Seasonal plates kissed by oak smoke. A warm room, a long table, and food worth lingering over.</p>
+      <div class="hero-cta">
+        <a class="btn btn--ember" href="../reservations/index.html">Book a table</a>
+        <a class="btn btn--outline" href="../order/index.html">Order online</a>
+      </div>
+      <div class="hero-meta">
+        <div><b>Tue – Sun</b>5pm – 11pm</div>
+        <div><b>★ 4.8</b>1,900+ reviews</div>
+        <div><b>Downtown</b>42 Oak Lane</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap center">
+      <span class="eyebrow">Our philosophy</span>
+      <h2 class="title">Fire, patience & good produce</h2>
+      <p class="lead">Three things make the Ember & Oak kitchen tick — and keep our regulars coming back.</p>
+    </div>
+    <div class="wrap">
+      <div class="grid grid-3" style="margin-top:48px">
+        <div class="card"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 2c1 3-1 4-2 6-1 1.8-.5 4 2 4 2 0 3-1.5 3-3 1.5 1 2 3 2 4a5 5 0 11-10 0c0-3 2-5 3-7 1-2 2-3 2-4z"/></svg></div><h3>Open-flame cooking</h3><p>Every dish touches the oak-fired grill or hearth. No shortcuts, just smoke and heat.</p></div>
+        <div class="card"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3a4 4 0 014 4c0 3-4 6-4 6s-4-3-4-6a4 4 0 014-4zM6 21c2-3 4-4 6-4s4 1 6 4"/></svg></div><h3>Seasonal & local</h3><p>Menus change with the harvest. We buy from farms within 50 miles whenever we can.</p></div>
+        <div class="card"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 3h16v4a4 4 0 01-4 4H8a4 4 0 01-4-4zM6 11v10M18 11v10M6 21h12"/></svg></div><h3>A room to linger</h3><p>Low light, warm wood and a soundtrack to match. Stay for one more glass.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background:var(--panel)">
+    <div class="wrap">
+      <div class="split">
+        <div class="photo"><img src="https://images.unsplash.com/photo-1594041680534-e8c8cdebd659?auto=format&fit=crop&w=1000&q=70" alt="Oak-grilled steak on a black plate"></div>
+        <div>
+          <span class="eyebrow">Signature plates</span>
+          <h2 class="title">Smoke you can taste</h2>
+          <div class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg><div><b>Oak-grilled ribeye</b> — 45-day aged, rosemary butter, bone marrow.</div></div>
+          <div class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg><div><b>Hearth flatbread</b> — blistered in the fire, whipped ricotta, hot honey.</div></div>
+          <div class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg><div><b>Charred market veg</b> — whatever's best that week, salsa verde.</div></div>
+          <a class="btn btn--dark" href="../menu/index.html" style="margin-top:12px">See the full menu</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section"><div class="wrap"><div class="cta">
+    <h2>Join us this week</h2>
+    <p>Tables fill fast on weekends. Reserve yours, or order our fire-cooked favourites to go.</p>
+    <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;position:relative">
+      <a class="btn btn--gold" href="../reservations/index.html">Reserve a table</a>
+      <a class="btn btn--outline" href="../order/index.html">Order online</a>
+    </div>
+  </div></div></section>
+
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="../home/index.html"><span class="logo"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8"><path d="M12 2c1 3-1 4-2 6-1 1.8-.5 4 2 4 2 0 3-1.5 3-3 1.5 1 2 3 2 4a5 5 0 11-10 0c0-3 2-5 3-7 1-2 2-3 2-4z"/></svg></span><span class="t"><b>Ember &amp; Oak</b><span>Wood-Fired Kitchen</span></span></a>
+          <p>Seasonal plates cooked over live oak fire. Downtown, since 2009.</p>
+        </div>
+        <div><h5>Visit</h5><a href="../menu/index.html">Menu</a><a href="../order/index.html">Order online</a><a href="../reservations/index.html">Reservations</a></div>
+        <div><h5>Hours</h5><a href="#">Tue–Thu 5–10</a><a href="#">Fri–Sat 5–11</a><a href="#">Sun 4–9</a></div>
+        <div><h5>Find us</h5><a href="#">42 Oak Lane</a><a href="#">(555) 014-3322</a><a href="#">hello@emberoak.demo</a></div>
+      </div>
+      <div class="foot-bottom"><span>© 2026 Ember &amp; Oak — Demo website.</span><span>Made with 🔥 &amp; oak</span></div>
+    </div>
+  </footer>
+
+  <div class="drawer-overlay" id="drawerOverlay" data-close-cart></div>
+  <aside class="drawer" id="cartDrawer" aria-label="Your order">
+    <div class="drawer-head"><h3>Your Order</h3><button class="drawer-close" data-close-cart aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg></button></div>
+    <div class="drawer-body" id="cartBody"></div>
+    <div class="drawer-foot">
+      <div class="sum-row"><span>Subtotal</span><span id="sumSub">$0.00</span></div>
+      <div class="sum-row"><span>Delivery <small>(free over $40)</small></span><span id="sumDel">$0.00</span></div>
+      <div class="sum-row total"><span>Total</span><span id="sumTotal">$0.00</span></div>
+      <button class="btn btn--ember btn--block" id="checkoutBtn">Place order</button>
+    </div>
+  </aside>
+
+  <div class="toast" id="toast"></div>
+  <script src="../js/main.js"></script>
+</body>
+</html>

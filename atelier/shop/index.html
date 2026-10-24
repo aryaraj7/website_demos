@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shop — Atelier Noir</title>
+  <meta name="description" content="Shop the Atelier Noir collection — outerwear, dresses, knitwear and trousers in natural fibres.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="wrap nav">
+      <a class="brand" href="../home/index.html"><b>Atelier</b><span>Noir · Est. 2014</span></a>
+      <nav class="nav-links">
+        <a href="../home/index.html">Home</a>
+        <a href="../shop/index.html" class="active">Shop</a>
+        <a href="../lookbook/index.html">Lookbook</a>
+        <a href="../contact/index.html">Contact</a>
+      </nav>
+      <div class="nav-right">
+        <a class="cart-btn" href="#" data-open-cart aria-label="Open bag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 7h12l1 14H5zM9 7V5a3 3 0 016 0v2"/></svg><span class="cart-count">0</span></a>
+        <button class="nav-toggle" aria-label="Menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 12h18M3 6h18M3 18h18"/></svg></button>
+      </div>
+    </div>
+  </header>
+
+  <section class="page-head">
+    <div class="wrap">
+      <div class="breadcrumb">Home · Shop</div>
+      <h1>The Collection</h1>
+      <p>Autumn / Winter '26. Natural fibres, considered cuts, a palette that never shouts.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="filters" id="filters">
+        <button class="chip active" data-filter="all">All</button>
+        <button class="chip" data-filter="outerwear">Outerwear</button>
+        <button class="chip" data-filter="dresses">Dresses</button>
+        <button class="chip" data-filter="knitwear">Knitwear</button>
+        <button class="chip" data-filter="trousers">Trousers</button>
+      </div>
+
+      <div class="products" id="grid">
+        <article class="product" data-category="outerwear"><div class="thumb ag1"><span class="tag">New</span><img src="https://images.unsplash.com/photo-1618333453296-9e35280fd6b1?auto=format&fit=crop&w=600&q=70" alt="The Noir Wool Coat"><button class="quick" data-add data-id="a1" data-name="The Noir Wool Coat" data-price="320"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>Add to bag</button></div><span class="cat">Outerwear</span><h3>The Noir Wool Coat</h3><div class="price">$320</div></article>
+
+        <article class="product" data-category="outerwear"><div class="thumb ag4"><img src="https://images.unsplash.com/photo-1692180142575-c31fcd106b5b?auto=format&fit=crop&w=600&q=70" alt="Belted Trench"><button class="quick" data-add data-id="a2" data-name="Belted Trench" data-price="275"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>Add to bag</button></div><span class="cat">Outerwear</span><h3>Belted Trench</h3><div class="price">$275</div></article>
+
+        <article class="product" data-category="dresses"><div class="thumb ag2"><span class="tag">New</span><img src="https://images.unsplash.com/photo-1790802162556-453f0527091f?auto=format&fit=crop&w=600&q=70" alt="Blush Silk Slip"><button class="quick" data-add data-id="a3" data-name="Blush Silk Slip" data-price="185"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>Add to bag</button></div><span class="cat">Dresses</span><h3>Blush Silk Slip</h3><div class="price">$185</div></article>
+
+        <article class="product" data-category="dresses"><div class="thumb ag6"><span class="tag tag--sale">Sale</span><img src="https://images.unsplash.com/photo-1764298493197-a1c1cce57800?auto=format&fit=crop&w=600&q=70" alt="Linen Midi Dress"><button class="quick" data-add data-id="a4" data-name="Linen Midi Dress" data-price="130"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>Add to bag</button></div><span class="cat">Dresses</span><h3>Linen Midi Dress</h3><div class="price"><small>$175</small>$130</div></article>
+
+        <article class="product" data-category="knitwear"><div class="thumb ag3"><img src="https://images.unsplash.com/photo-1574201635302-388dd92a4c3f?auto=format&fit=crop&w=600&q=70" alt="Camel Merino Knit"><button class="quick" data-add data-id="a5" data-name="Camel Merino Knit" data-price="140"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>Add to bag</button></div><span class="cat">Knitwear</span><h3>Camel Merino Knit</h3><div class="price">$140</div></article>
+
+        <article class="product" data-category="knitwear"><div class="thumb ag8"><img src="https://images.unsplash.com/photo-1631541909061-71e349d1f203?auto=format&fit=crop&w=600&q=70" alt="Cashmere Crewneck"><button class="quick" data-add data-id="a6" data-name="Cashmere Crewneck" data-price="210"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>Add to bag</button></div><span class="cat">Knitwear</span><h3>Cashmere Crewneck</h3><div class="price">$210</div></article>
+
+        <article class="product" data-category="trousers"><div class="thumb ag5"><img src="https://images.unsplash.com/photo-1584273143981-41c073dfe8f8?auto=format&fit=crop&w=600&q=70" alt="Tailored Wide Trouser"><button class="quick" data-add data-id="a7" data-name="Tailored Wide Trouser" data-price="160"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>Add to bag</button></div><span class="cat">Trousers</span><h3>Tailored Wide Trouser</h3><div class="price">$160</div></article>
+
+        <article class="product" data-category="trousers"><div class="thumb ag7"><img src="https://images.unsplash.com/photo-1762395271659-9465152c7e72?auto=format&fit=crop&w=600&q=70" alt="Ink Straight Jean"><button class="quick" data-add data-id="a8" data-name="Ink Straight Jean" data-price="120"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>Add to bag</button></div><span class="cat">Trousers</span><h3>Ink Straight Jean</h3><div class="price">$120</div></article>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="../home/index.html"><b>Atelier</b><span>Noir · Est. 2014</span></a>
+          <p style="margin-top:14px">Considered essentials in a restrained palette. Designed in-house, made to last.</p>
+        </div>
+        <div><h5>Shop</h5><a href="../shop/index.html">New Arrivals</a><a href="../shop/index.html">Outerwear</a><a href="../shop/index.html">Dresses</a><a href="../shop/index.html">Knitwear</a></div>
+        <div><h5>About</h5><a href="../lookbook/index.html">Lookbook</a><a href="../contact/index.html">Contact</a><a href="#">Sustainability</a></div>
+        <div><h5>Help</h5><a href="#">Shipping</a><a href="#">Returns</a><a href="#">Size Guide</a></div>
+      </div>
+      <div class="foot-bottom"><span>© 2026 Atelier Noir — Demo website.</span><span>Designed with restraint.</span></div>
+    </div>
+  </footer>
+
+  <div class="drawer-overlay" id="drawerOverlay" data-close-cart></div>
+  <aside class="drawer" id="cartDrawer" aria-label="Shopping bag">
+    <div class="drawer-head"><h3>Your Bag</h3><button class="drawer-close" data-close-cart aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M18 6L6 18M6 6l12 12"/></svg></button></div>
+    <div class="drawer-body" id="cartBody"></div>
+    <div class="drawer-foot">
+      <div class="sum-row"><span>Subtotal</span><span id="sumSub">$0</span></div>
+      <div class="sum-row"><span>Shipping <small>(free over $150)</small></span><span id="sumShip">$0</span></div>
+      <div class="sum-row total"><span>Total</span><span id="sumTotal">$0</span></div>
+      <button class="btn btn--ink btn--block" id="checkoutBtn">Checkout</button>
+    </div>
+  </aside>
+
+  <div class="toast" id="toast"></div>
+  <script src="../js/main.js"></script>
+  <script>
+    (function(){
+      var chips=document.querySelectorAll("#filters .chip"), cards=[].slice.call(document.querySelectorAll("#grid .product"));
+      function apply(f){ cards.forEach(function(c){ c.style.display=(f==="all"||c.getAttribute("data-category")===f)?"":"none"; }); chips.forEach(function(ch){ ch.classList.toggle("active",ch.getAttribute("data-filter")===f); }); }
+      chips.forEach(function(ch){ ch.addEventListener("click",function(){ apply(ch.getAttribute("data-filter")); }); });
+    })();
+  </script>
+</body>
+</html>

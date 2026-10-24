@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Order Online — Ember & Oak</title>
+  <meta name="description" content="Order Ember & Oak's wood-fired favourites for delivery or pickup. Free delivery over $40.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="wrap nav">
+      <a class="brand" href="../home/index.html"><span class="logo"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8"><path d="M12 2c1 3-1 4-2 6-1 1.8-.5 4 2 4 2 0 3-1.5 3-3 1.5 1 2 3 2 4a5 5 0 11-10 0c0-3 2-5 3-7 1-2 2-3 2-4z"/></svg></span><span class="t"><b>Ember &amp; Oak</b><span>Wood-Fired Kitchen</span></span></a>
+      <nav class="nav-links">
+        <a href="../home/index.html">Home</a>
+        <a href="../menu/index.html">Menu</a>
+        <a href="../order/index.html" class="active">Order</a>
+        <a href="../reservations/index.html">Reservations</a>
+      </nav>
+      <div class="nav-right">
+        <a class="cart-btn" href="#" data-open-cart aria-label="Open order"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 2l-2 5v13a1 1 0 001 1h14a1 1 0 001-1V7l-2-5H6zM4 7h16M16 11a4 4 0 01-8 0"/></svg><span class="cart-count">0</span></a>
+        <button class="nav-toggle" aria-label="Menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg></button>
+      </div>
+    </div>
+  </header>
+
+  <section class="page-head">
+    <div class="wrap">
+      <div class="breadcrumb">Home · Order</div>
+      <h1>Order Online</h1>
+      <p>Our fire-cooked favourites, boxed for delivery or pickup. Free delivery over $40.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="filters" id="filters">
+        <button class="chip active" data-filter="all">All</button>
+        <button class="chip" data-filter="plates">Small Plates</button>
+        <button class="chip" data-filter="mains">Mains</button>
+        <button class="chip" data-filter="sides">Sides</button>
+        <button class="chip" data-filter="sweet">Dessert</button>
+      </div>
+
+      <div class="products" id="grid">
+        <article class="product" data-category="plates"><div class="thumb pg2"><span class="tag">Veg</span><img src="https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=600&q=70" alt="Hearth flatbread"></div>
+          <div class="body"><h3>Hearth Flatbread</h3><p class="desc">Whipped ricotta, hot honey, thyme.</p><div class="foot"><div class="price">$14</div><button class="add-btn" data-add data-id="e1" data-name="Hearth Flatbread" data-price="14"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 5v14M5 12h14"/></svg>Add</button></div></div></article>
+
+        <article class="product" data-category="plates"><div class="thumb pg4"><img src="https://images.unsplash.com/photo-1578935149228-66b184c83e69?auto=format&fit=crop&w=600&q=70" alt="Charred octopus"></div>
+          <div class="body"><h3>Charred Octopus</h3><p class="desc">Smoked paprika, confit potato, salsa verde.</p><div class="foot"><div class="price">$18</div><button class="add-btn" data-add data-id="e2" data-name="Charred Octopus" data-price="18"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 5v14M5 12h14"/></svg>Add</button></div></div></article>
+
+        <article class="product" data-category="mains"><div class="thumb pg1"><span class="tag">Signature</span><img src="https://images.unsplash.com/photo-1546964124-0cce460f38ef?auto=format&fit=crop&w=600&q=70" alt="Oak-grilled ribeye"></div>
+          <div class="body"><h3>Oak-Grilled Ribeye</h3><p class="desc">45-day aged, rosemary butter, bone marrow.</p><div class="foot"><div class="price">$42</div><button class="add-btn" data-add data-id="e3" data-name="Oak-Grilled Ribeye" data-price="42"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 5v14M5 12h14"/></svg>Add</button></div></div></article>
+
+        <article class="product" data-category="mains"><div class="thumb pg5"><img src="https://images.unsplash.com/photo-1766701753169-5ed4a00d4217?auto=format&fit=crop&w=600&q=70" alt="Smoked half chicken"></div>
+          <div class="body"><h3>Smoked Half Chicken</h3><p class="desc">Brick-pressed, lemon, charred spring onion.</p><div class="foot"><div class="price">$28</div><button class="add-btn" data-add data-id="e4" data-name="Smoked Half Chicken" data-price="28"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 5v14M5 12h14"/></svg>Add</button></div></div></article>
+
+        <article class="product" data-category="mains"><div class="thumb pg3"><span class="tag">Veg</span><img src="https://images.unsplash.com/photo-1650847897525-64244fc9f8df?auto=format&fit=crop&w=600&q=70" alt="Ember mushroom tart"></div>
+          <div class="body"><h3>Ember Mushroom Tart</h3><p class="desc">Wild mushrooms, taleggio, truffle.</p><div class="foot"><div class="price">$24</div><button class="add-btn" data-add data-id="e5" data-name="Ember Mushroom Tart" data-price="24"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 5v14M5 12h14"/></svg>Add</button></div></div></article>
+
+        <article class="product" data-category="sides"><div class="thumb pg6"><img src="https://images.unsplash.com/photo-1633959639799-6d3f66e05710?auto=format&fit=crop&w=600&q=70" alt="Duck-fat potatoes"></div>
+          <div class="body"><h3>Duck-Fat Potatoes</h3><p class="desc">Triple-cooked, rosemary salt.</p><div class="foot"><div class="price">$10</div><button class="add-btn" data-add data-id="e6" data-name="Duck-Fat Potatoes" data-price="10"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 5v14M5 12h14"/></svg>Add</button></div></div></article>
+
+        <article class="product" data-category="sides"><div class="thumb pg2"><span class="tag">Veg</span><img src="https://images.unsplash.com/photo-1701484185547-a71576b65e1a?auto=format&fit=crop&w=600&q=70" alt="Smoked mac and cheese"></div>
+          <div class="body"><h3>Smoked Mac &amp; Cheese</h3><p class="desc">Three cheeses, oak-smoked breadcrumb.</p><div class="foot"><div class="price">$11</div><button class="add-btn" data-add data-id="e7" data-name="Smoked Mac & Cheese" data-price="11"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 5v14M5 12h14"/></svg>Add</button></div></div></article>
+
+        <article class="product" data-category="sweet"><div class="thumb pg4"><span class="tag">Veg</span><img src="https://images.unsplash.com/photo-1567171466295-4afa63d45416?auto=format&fit=crop&w=600&q=70" alt="Burnt Basque cheesecake"></div>
+          <div class="body"><h3>Burnt Basque Cheesecake</h3><p class="desc">Caramelised top, crème fraîche.</p><div class="foot"><div class="price">$12</div><button class="add-btn" data-add data-id="e8" data-name="Burnt Basque Cheesecake" data-price="12"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 5v14M5 12h14"/></svg>Add</button></div></div></article>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="../home/index.html"><span class="logo"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8"><path d="M12 2c1 3-1 4-2 6-1 1.8-.5 4 2 4 2 0 3-1.5 3-3 1.5 1 2 3 2 4a5 5 0 11-10 0c0-3 2-5 3-7 1-2 2-3 2-4z"/></svg></span><span class="t"><b>Ember &amp; Oak</b><span>Wood-Fired Kitchen</span></span></a>
+          <p>Seasonal plates cooked over live oak fire. Downtown, since 2009.</p>
+        </div>
+        <div><h5>Visit</h5><a href="../menu/index.html">Menu</a><a href="../order/index.html">Order online</a><a href="../reservations/index.html">Reservations</a></div>
+        <div><h5>Hours</h5><a href="#">Tue–Thu 5–10</a><a href="#">Fri–Sat 5–11</a><a href="#">Sun 4–9</a></div>
+        <div><h5>Find us</h5><a href="#">42 Oak Lane</a><a href="#">(555) 014-3322</a><a href="#">hello@emberoak.demo</a></div>
+      </div>
+      <div class="foot-bottom"><span>© 2026 Ember &amp; Oak — Demo website.</span><span>Made with 🔥 &amp; oak</span></div>
+    </div>
+  </footer>
+
+  <div class="drawer-overlay" id="drawerOverlay" data-close-cart></div>
+  <aside class="drawer" id="cartDrawer" aria-label="Your order">
+    <div class="drawer-head"><h3>Your Order</h3><button class="drawer-close" data-close-cart aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg></button></div>
+    <div class="drawer-body" id="cartBody"></div>
+    <div class="drawer-foot">
+      <div class="sum-row"><span>Subtotal</span><span id="sumSub">$0.00</span></div>
+      <div class="sum-row"><span>Delivery <small>(free over $40)</small></span><span id="sumDel">$0.00</span></div>
+      <div class="sum-row total"><span>Total</span><span id="sumTotal">$0.00</span></div>
+      <button class="btn btn--ember btn--block" id="checkoutBtn">Place order</button>
+    </div>
+  </aside>
+
+  <div class="toast" id="toast"></div>
+  <script src="../js/main.js"></script>
+  <script>
+    (function(){
+      var chips=document.querySelectorAll("#filters .chip"), cards=[].slice.call(document.querySelectorAll("#grid .product"));
+      function apply(f){ cards.forEach(function(c){ c.style.display=(f==="all"||c.getAttribute("data-category")===f)?"":"none"; }); chips.forEach(function(ch){ ch.classList.toggle("active",ch.getAttribute("data-filter")===f); }); }
+      chips.forEach(function(ch){ ch.addEventListener("click",function(){ apply(ch.getAttribute("data-filter")); }); });
+    })();
+  </script>
+</body>
+</html>
